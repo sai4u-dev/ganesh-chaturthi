@@ -81,11 +81,20 @@ export default function Home() {
 
       <div className="max-w-[1280px] mx-auto px-4 md:px-6">
         {apiStatus === 'fallback' && (
-          <div className="mt-3 bg-amber-50 border border-amber-200 text-amber-800 text-[12px] font-medium px-4 py-2 rounded-full inline-flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" /> Demo mode — showing sample data. Connect MongoDB backend at localhost:5000 for updates.
-          </div>
+          <>
+            {/* Dev-only: show verbose localhost hint for local debugging */}
+            {import.meta.env.DEV ? (
+              <div className="mt-3 bg-amber-50 border border-amber-200 text-amber-800 text-[12px] font-medium px-4 py-2 rounded-full inline-flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" /> Demo mode — showing sample data. Connect MongoDB backend at localhost:5000 for updates.
+              </div>
+            ) : (
+              <div className="mt-3 bg-amber-50 border border-amber-200 text-amber-800 text-[12px] font-medium px-4 py-2 rounded-full inline-flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" /> Live data temporarily unavailable — showing cached content.
+              </div>
+            )}
+          </>
         )}
-        {apiStatus === 'connected' && !loading && (
+        {import.meta.env.DEV && apiStatus === 'connected' && !loading && (
           <div className="mt-3 bg-emerald-50 border border-emerald-200 text-emerald-800 text-[12px] font-semibold px-4 py-2 rounded-full inline-flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" /> Connected — Data from MongoDB
           </div>

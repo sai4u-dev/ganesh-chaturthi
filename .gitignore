@@ -18,6 +18,7 @@ frontend/.env
 frontend/.env.local
 server/.env
 server/.env.local
+server/atlas-credentials.env
 
 # Logs
 logs

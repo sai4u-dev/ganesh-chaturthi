@@ -5,8 +5,8 @@ import { Lock, Mail, Eye, EyeOff, Sparkles, ArrowLeft, ShieldCheck } from 'lucid
 import { api } from '../api/client';
 
 export default function AdminLogin() {
-  const [email, setEmail] = useState('admin@ganeshutsav.com');
-  const [password, setPassword] = useState('Admin@123');
+  const [email, setEmail] = useState(import.meta.env.DEV ? 'admin@ganeshutsav.com' : '');
+  const [password, setPassword] = useState(import.meta.env.DEV ? 'Admin@123' : '');
   const [show, setShow] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
@@ -27,7 +27,14 @@ export default function AdminLogin() {
       localStorage.setItem('ganesh_user', JSON.stringify(res.user));
       navigate('/admin/dashboard');
     } catch (err) {
-      setError(err.response?.data?.message || 'Login failed. Check credentials or ensure backend is running (npm run dev in /server). Demo fallback works on public site without login.');
+      const serverMsg = err.response?.data?.message;
+      if (serverMsg) {
+        setError(serverMsg);
+      } else if (import.meta.env.DEV) {
+        setError('Login failed. Check credentials or ensure backend is running (npm run dev in /server). Demo fallback works on public site without login.');
+      } else {
+        setError('Invalid email or password. Please try again.');
+      }
     } finally {
       setLoading(false);
     }
@@ -98,17 +105,23 @@ export default function AdminLogin() {
                 {loading ? 'Signing in...' : 'Sign In →'}
               </button>
 
-              <div className="bg-[#FFF8E7] border border-[#F0D9B5]/70 rounded-2xl p-3 text-[11px] leading-relaxed text-[#8B7355]">
-                <div className="font-bold text-[#1A0F0F] text-[11px] tracking-[0.08em]">DEFAULT CREDENTIALS (after seed)</div>
-                Email: <code className="bg-white border px-1.5 py-0.5 rounded">admin@ganeshutsav.com</code><br />
-                Password: <code className="bg-white border px-1.5 py-0.5 rounded">Admin@123</code><br />
-                <span className="opacity-70">Run: <code>pnpm seed</code> or <code>node seed/seed.js</code> once MongoDB is connected.</span>
-              </div>
+              {import.meta.env.DEV && (
+                <div className="bg-[#FFF8E7] border border-[#F0D9B5]/70 rounded-2xl p-3 text-[11px] leading-relaxed text-[#8B7355]">
+                  <div className="font-bold text-[#1A0F0F] text-[11px] tracking-[0.08em]">DEFAULT CREDENTIALS (after seed)</div>
+                  Email: <code className="bg-white border px-1.5 py-0.5 rounded">admin@ganeshutsav.com</code><br />
+                  Password: <code className="bg-white border px-1.5 py-0.5 rounded">Admin@123</code><br />
+                  <span className="opacity-70">Run: <code>pnpm seed</code> or <code>node seed/seed.js</code> once MongoDB is connected.</span>
+                </div>
+              )}
             </form>
 
             <div className="mt-6 text-center text-[12px] text-[#8B7355]">
-              Public site works without login — data falls back to demo if API is offline.
-              <br />
+              {import.meta.env.DEV && (
+                <>
+                  Public site works without login — data falls back to demo if API is offline.
+                  <br />
+                </>
+              )}
               <Link to="/" className="font-bold text-[#FF6B00] hover:underline">View Website →</Link>
             </div>
           </div>
