@@ -151,7 +151,7 @@ export default function Hero({ settings, t = (k) => k }) {
             <div ref={imageRef} className="relative rounded-[28px] overflow-hidden bg-gradient-to-br from-[#6D071A] via-[#8B1A2B] to-[#1A0F0F] p-[1px] shadow-[0_24px_64px_rgba(109,7,26,0.25)]">
               <div className="rounded-[27px] overflow-hidden bg-[#FFF8E7] relative">
                 <img
-                  src="https://images.unsplash.com/photo-1605600659873-d808a13e4d2a?w=900&auto=format&fit=crop&q=80"
+                  src="https://i.pinimg.com/1200x/7b/61/0f/7b610f30b15efe1b1986ced114cfe2bb.jpg"
                   alt="Ganesh Idol"
                   className="w-full h-[420px] md:h-[520px] object-cover"
                 />

@@ -65,7 +65,7 @@ const seed = async () => {
   for (let i = 0; i < dates.length; i++) {
     await Annadanam.create({
       date: dates[i],
-      dayLabel: `Day ${i+1} — ${dates[i].toLocaleDateString('en-IN', { month: 'short', day: 'numeric' })}`,
+      dayLabel: `Day ${i + 1} — ${dates[i].toLocaleDateString('en-IN', { month: 'short', day: 'numeric' })}`,
       mealType: 'lunch',
       time: '12:00 PM - 3:00 PM',
       menu: i === 0 ? ['Pulihora', 'Sambar Rice', 'Curd Rice', 'Laddu', 'Vada'] : i === 5 ? ['Biryani', 'Raita', 'Double ka Meetha', 'Modak'] : ['Pulihora', 'Dal Rice', 'Curd Rice', 'Laddu'],
@@ -111,7 +111,7 @@ const seed = async () => {
   ]);
 
   await Committee.insertMany([
-    { name: 'Sri Karthik Kowshik', role: 'Utsav Chairman', phone: '+91 98765 43210', image: 'https://i.pravatar.cc/300?img=12', order: 1 },
+    { name: 'Sri Ganesh Maharaj', role: 'Utsav Chairman', phone: '+91 98765 43210', image: 'https://i.pravatar.cc/300?img=12', order: 1 },
     { name: 'Sri Ramesh Yadav', role: 'Treasurer', phone: '+91 98765 43211', image: 'https://i.pravatar.cc/300?img=15', order: 2 },
     { name: 'Smt. Lakshmi Devi', role: 'Annadanam In-charge', phone: '+91 98765 43212', image: 'https://i.pravatar.cc/300?img=32', order: 3 },
     { name: 'Sri Suresh Kumar', role: 'Pooja Committee Head', phone: '+91 98765 43213', image: 'https://i.pravatar.cc/300?img=18', order: 4 },
@@ -129,7 +129,7 @@ const seed = async () => {
     { date: new Date('2026-09-20'), time: '07:00 PM', title: 'Musical Night — Bhajans & Dhol', description: 'Dhol-tasha & devotional songs', category: 'cultural', icon: '🥁', order: 8 },
     { date: new Date('2026-09-24'), time: '05:00 AM', title: 'Nimajjanam / Visarjanam Procession', titleTelugu: 'నిమజ్జనం', description: 'Grand farewell to Hussain Sagar via Tank Bund — 15 lakh devotees', category: 'nimajjanam', icon: '🌊', isMainEvent: true, order: 9 },
   ];
-  await Schedule.insertMany(scheduleBase.map(s => ({ ...s, venue: 'Khairatabad Mandapam' })) );
+  await Schedule.insertMany(scheduleBase.map(s => ({ ...s, venue: 'Khairatabad Mandapam' })));
 
   const adminEmail = process.env.ADMIN_EMAIL || 'admin@ganeshutsav.com';
   const adminPass = process.env.ADMIN_PASSWORD || 'Admin@123';

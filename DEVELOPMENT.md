@@ -18,7 +18,7 @@ mongosh --eval "db.runCommand({ping:1})" # or Atlas compass
 ## 2. First-Time Setup
 
 ```bash
-git clone <repo> karthik-kowshik && cd karthik-kowshik
+git clone <repo> ganesh-chaturthi && cd ganesh-chaturthi
 
 # env
 cp frontend/.env.example frontend/.env

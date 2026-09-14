@@ -2,7 +2,7 @@
 
 ## 1. Overview
 
-`karthik-kowshik` is a two-tier festival platform:
+`ganesh-chaturthi` is a two-tier festival platform:
 
 - **Frontend (Vercel)** — React 19 SPA via Vite, Tailwind v4, GSAP/Framer/Lenis. No SSR. Talks to backend over HTTPS (`VITE_API_URL`).
 - **Backend (Render)** — Express 5 REST API, Mongoose 8, JWT auth, MongoDB Atlas. Stateless, horizontally scalable, health-checked.

@@ -209,4 +209,5 @@ Sub-readmes: [frontend/README.md](frontend/README.md), [server/README.md](server
 Questions? Open an issue or contact `info@khairatabadganesh.com`.
 
 Built for Bappa’s 70th year at Khairatabad — Hyderabad’s pride since 1954.
+
 # ganesh-chaturthi
