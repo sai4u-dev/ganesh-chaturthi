@@ -1,0 +1,160 @@
+// Minimal i18n — English + Telugu (extendable to Hindi)
+export const translations = {
+  en: {
+    nav: {
+      home: 'Home',
+      about: 'About',
+      schedule: 'Schedule',
+      pooja: 'Pooja Timings',
+      annadanam: 'Annadanam',
+      nimajjanam: 'Nimajjanam',
+      invitation: 'Invitation',
+      register: 'Register',
+      gallery: 'Gallery',
+      contact: 'Contact',
+    },
+    hero: {
+      welcome: 'Welcome to',
+      invitationLine: 'You and your family are warmly invited to celebrate Ganesh Chaturthi with us and seek the blessings of Lord Ganesha.',
+      venue: 'Venue',
+      dates: 'Dates',
+      countdownTo: 'Countdown to Agamanam',
+      ctaPooja: 'View Pooja Timings',
+      ctaAnnadanam: 'Annadanam Schedule',
+    },
+    about: {
+      title: 'About the Utsav',
+      subtitle: '70 Years of Devotion — Hyderabad’s Pride Since 1954',
+      p1: 'Khairatabad Maha Ganesh is not just an idol — it is a 70-year legacy. Every year, artisans sculpt the tallest clay Ganesh in India, this year a 70-feet Ekadasha Rudra Avatar, crafted over 3 months by 40 sculptors.',
+      p2: 'From Pran Pratishtha to Nimajjanam, 11 days bring 15+ lakh devotees together for pooja, annadanam, culture, and seva. All are welcome — no pass needed for darshan.',
+      statsYears: 'Years of Legacy',
+      statsHeight: 'Maha Ganesh Height',
+      statsDevotees: 'Devotees Expected',
+      statsDays: 'Days of Celebration',
+    },
+    schedule: {
+      title: 'Event Schedule & Dates',
+      subtitle: 'Your complete calendar — Pran Pratishtha to Nimajjanam',
+      viewTimeline: 'Timeline View',
+      viewCalendar: 'Calendar View',
+      categories: { all: 'All', pran_pratishtha: 'Pran Pratishtha', daily_pooja: 'Daily Pooja', special_pooja: 'Special Pooja', aarti: 'Aarti', cultural: 'Cultural', annadanam: 'Annadanam', nimajjanam: 'Nimajjanam' }
+    },
+    invitation: {
+      title: 'Digital Invitation',
+      subtitle: 'Share with one link — no printing needed',
+      teluguTitle: 'మీకు హృదయపూర్వక ఆహ్వానం',
+      message: '🙏 You and your family are warmly invited to celebrate Ganesh Chaturthi with us and seek the blessings of Lord Ganesha.',
+      shareWhatsApp: 'Share on WhatsApp',
+      shareInstagram: 'Share on Instagram',
+      copyLink: 'Copy Link',
+      downloadQR: 'Download QR',
+      scanQR: 'Scan to open invitation',
+    },
+    forms: {
+      title: 'Registration Forms',
+      subtitle: 'Choose your seva — volunteer, donate, or participate',
+      volunteer: 'Volunteer Registration',
+      annadanam: 'Annadanam Registration',
+      event: 'Event Participation',
+      sponsorship: 'Sponsorship / Donation',
+      contact: 'Contact Us',
+      name: 'Name',
+      phone: 'Phone',
+      email: 'Email',
+      participants: 'Number of Participants',
+      activity: 'Preferred Activity',
+      message: 'Message',
+      submit: 'Submit Registration',
+      success: '🙏 Registration received! Our team will contact you soon.',
+      error: 'Please fill required fields.',
+    },
+    contact: {
+      title: 'Contact & Location',
+      organizer: 'Organizers',
+      reach: 'How to Reach',
+      mapTitle: 'Find Us on Map',
+    }
+  },
+  te: {
+    nav: {
+      home: 'హోమ్',
+      about: 'గురించి',
+      schedule: 'షెడ్యూల్',
+      pooja: 'పూజా సమయాలు',
+      annadanam: 'అన్నదానం',
+      nimajjanam: 'నిమజ్జనం',
+      invitation: 'ఆహ్వానం',
+      register: 'నమోదు',
+      gallery: 'గ్యాలరీ',
+      contact: 'సంప్రదించండి',
+    },
+    hero: {
+      welcome: 'స్వాగతం',
+      invitationLine: 'మీరు మరియు మీ కుటుంబం గణేష్ చతుర్థి వేడుకలకు హృదయపూర్వకంగా ఆహ్వానించబడ్డారు — గణపతి బాప్పా ఆశీస్సులు పొందండి.',
+      venue: 'వేదిక',
+      dates: 'తేదీలు',
+      countdownTo: 'ఆగమనానికి కౌంట్‌డౌన్',
+      ctaPooja: 'పూజా సమయాలు చూడండి',
+      ctaAnnadanam: 'అన్నదానం షెడ్యూల్',
+    },
+    about: {
+      title: 'ఉత్సవం గురించి',
+      subtitle: '70 ఏళ్ల భక్తి — 1954 నుండి హైదరాబాద్ గర్వం',
+      p1: 'ఖైరతాబాద్ మహా గణేష్ కేవలం విగ్రహం కాదు — 70 ఏళ్ల వారసత్వం. ప్రతి ఏడాది భారతదేశంలోనే అత్యంత ఎత్తైన మట్టి గణేష్‌ను శిల్పులు 3 నెలలపాటు తయారు చేస్తారు — ఈ ఏడాది 70 అడుగుల ఏకాదశ రుద్ర అవతారం.',
+      p2: 'ప్రాణ ప్రతిష్ట నుండి నిమజ్జనం వరకు 11 రోజులు 15 లక్షలకు పైగా భక్తులను ఒకచోట చేరుస్తుంది — పూజ, అన్నదానం, సాంస్కృతిక కార్యక్రమాలు.',
+      statsYears: 'ఏళ్ల వారసత్వం',
+      statsHeight: 'మహా గణేష్ ఎత్తు',
+      statsDevotees: 'భక్తులు',
+      statsDays: 'రోజుల వేడుక',
+    },
+    schedule: {
+      title: 'కార్యక్రమ షెడ్యూల్',
+      subtitle: 'ప్రాణ ప్రతిష్ట నుండి నిమజ్జనం వరకు పూర్తి క్యాలెండర్',
+      viewTimeline: 'టైమ్‌లైన్',
+      viewCalendar: 'క్యాలెండర్',
+      categories: { all: 'అన్నీ', pran_pratishtha: 'ప్రాణ ప్రతిష్ట', daily_pooja: 'రోజువారీ పూజ', special_pooja: 'ప్రత్యేక పూజ', aarti: 'హారతి', cultural: 'సాంస్కృతిక', annadanam: 'అన్నదానం', nimajjanam: 'నిమజ్జనం' }
+    },
+    invitation: {
+      title: 'డిజిటల్ ఆహ్వానం',
+      subtitle: 'ఒక లింక్‌తో అందరితో పంచుకోండి — ప్రింటింగ్ అవసరం లేదు',
+      teluguTitle: 'మీకు హృదయపూర్వక ఆహ్వానం',
+      message: '🙏 మీరు మరియు మీ కుటుంబం గణేష్ చతుర్థి వేడుకలకు ఆహ్వానించబడ్డారు — గణపతి బాప్పా ఆశీస్సులు పొందండి.',
+      shareWhatsApp: 'వాట్సాప్‌లో షేర్ చేయండి',
+      shareInstagram: 'ఇన్‌స్టాలో షేర్ చేయండి',
+      copyLink: 'లింక్ కాపీ చేయండి',
+      downloadQR: 'QR డౌన్‌లోడ్',
+      scanQR: 'ఆహ్వానం తెరవడానికి స్కాన్ చేయండి',
+    },
+    forms: {
+      title: 'నమోదు ఫారమ్‌లు',
+      subtitle: 'మీ సేవను ఎంచుకోండి — స్వచ్ఛంద, దానం లేదా పాల్గొనండి',
+      volunteer: 'స్వచ్ఛంద నమోదు',
+      annadanam: 'అన్నదానం నమోదు',
+      event: 'ఈవెంట్ పాల్గొనడం',
+      sponsorship: 'స్పాన్సర్‌షిప్ / విరాళం',
+      contact: 'సంప్రదించండి',
+      name: 'పేరు',
+      phone: 'ఫోన్',
+      email: 'ఇమెయిల్',
+      participants: 'పాల్గొనేవారి సంఖ్య',
+      activity: 'ఇష్టపడే కార్యాచరణ',
+      message: 'సందేశం',
+      submit: 'నమోదు సమర్పించండి',
+      success: '🙏 నమోదు స్వీకరించబడింది! మా బృందం త్వరలో సంప్రదిస్తుంది.',
+      error: 'దయచేసి అవసరమైన ఫీల్డ్‌లను నింపండి.',
+    },
+    contact: {
+      title: 'సంప్రదించండి & లొకేషన్',
+      organizer: 'నిర్వాహకులు',
+      reach: 'ఎలా చేరాలి',
+      mapTitle: 'మ్యాప్‌లో కనుగొనండి',
+    }
+  }
+};
+
+export const useT = (lang) => (path) => {
+  const keys = path.split('.');
+  let cur = translations[lang] || translations.en;
+  for (const k of keys) cur = cur?.[k];
+  return cur ?? path;
+};

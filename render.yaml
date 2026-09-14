@@ -1,0 +1,29 @@
+# Render Blueprint — Backend API (Node + Express + MongoDB)
+# Deploy: Render → New → Blueprint → connect this repo
+# Frontend is on Vercel (frontend/vercel.json). This file deploys ONLY the backend.
+services:
+  - type: web
+    name: khairatabad-ganesh-api
+    runtime: node
+    region: singapore
+    plan: free
+    rootDir: server
+    buildCommand: pnpm install --frozen-lockfile
+    startCommand: pnpm start
+    healthCheckPath: /api/health
+    autoDeploy: false
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: FRONTEND_URL
+        sync: false
+      - key: ALLOWED_ORIGINS
+        sync: false
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false

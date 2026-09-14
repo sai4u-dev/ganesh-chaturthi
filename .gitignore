@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+frontend/node_modules/
+server/node_modules/
+
+# Build
+frontend/dist/
+frontend/dist-ssr/
+frontend/.vite/
+
+# Env — secrets
+.env
+.env.local
+.env.production
+.env.development
+frontend/.env
+frontend/.env.local
+server/.env
+server/.env.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Vercel / Render
+.vercel
+.render
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea
+coverage
+.nyc_output
