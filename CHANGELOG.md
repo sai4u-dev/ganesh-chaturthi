@@ -44,5 +44,5 @@ Format follows Keep a Changelog + SemVer. Dates in IST (Asia/Kolkata).
 - On each PR, add an entry under `## [Unreleased]` then move to version on release.
 - Use `Added | Changed | Fixed | Removed | Security` subsections.
 
-[1.0.0]: https://github.com/<your-org>/ganesh-chaturthi/releases/tag/v1.0.0
-[Unreleased]: https://github.com/<your-org>/ganesh-chaturthi/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/sai4u-dev/ganesh-chaturthi/releases/tag/v1.0.0
+[Unreleased]: https://github.com/sai4u-dev/ganesh-chaturthi/compare/v1.0.0...HEAD

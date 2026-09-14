@@ -2,6 +2,11 @@
 
 This repo uses **split deployment**: Frontend on **Vercel**, Backend on **Render**. No monolith.
 
+**Repo:** `https://github.com/sai4u-dev/ganesh-chaturthi.git`
+```bash
+git clone https://github.com/sai4u-dev/ganesh-chaturthi.git && cd ganesh-chaturthi
+```
+
 ## 1. Environments
 
 | Env | Frontend URL | Backend URL | DB |
@@ -64,7 +69,7 @@ services:
 ```
 
 Steps:
-1. Push to GitHub `main`.
+1. Push to GitHub `main` (`https://github.com/sai4u-dev/ganesh-chaturthi.git`).
 2. Render → **New → Blueprint** → select repo → Apply (or **New → Web Service** manually: Root `server`, Build `pnpm install --frozen-lockfile`, Start `pnpm start`, Health `/api/health`).
 3. In Render Dashboard → Environment, set:
    ```

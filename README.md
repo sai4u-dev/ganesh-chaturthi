@@ -4,23 +4,40 @@
 
 **Live split deployment:** **Frontend → Vercel** + **Backend → Render** (MongoDB Atlas). Fallback demo data so the site always renders even if the API is offline.
 
+**Repo:** `https://github.com/sai4u-dev/ganesh-chaturthi.git` — `git clone https://github.com/sai4u-dev/ganesh-chaturthi.git`
+
 ---
 
 ## Screenshots
 
-> All images are placeholders in [`screenshots/`](screenshots/) — replace them with your real captures. Also mirrored in `docs/images/`.
+> Live captures (1920×1080) — sources in [`screenshots/`](screenshots/) mirrored in [`docs/images/`](docs/images/).
 
-![Hero](screenshots/01-hero.png)
-![Schedule](screenshots/02-schedule.png)
-![Pooja](screenshots/03-pooja.png)
-![Annadanam](screenshots/04-annadanam.png)
-![Gallery](screenshots/05-gallery.png)
-![Admin](screenshots/06-admin.png)
-![About the utsav](screenshots/02-about-the-utsav.png)
-![Maha Nimarjanam](screenshots/07-maha-nimarjanam.png)
-![Digital Invitation](screenshots/08-digital-invitation.png)
+| Hero & Countdown | About the Utsav | Schedule — Timeline & Calendar |
+| --- | --- | --- |
+| ![Hero](screenshots/01-hero.png) | ![About the Utsav](screenshots/02-about-the-utsav.png) | ![Schedule](screenshots/02-schedule.png) |
 
-_Tip: take 1280×720 screenshots of each section and overwrite the files above._
+| Pooja Timings | Annadanam | Gallery |
+| --- | --- | --- |
+| ![Pooja](screenshots/03-pooja.png) | ![Annadanam](screenshots/04-annadanam.png) | ![Gallery](screenshots/05-gallery.png) |
+
+| Admin Dashboard | Maha Nimarjanam | Digital Invitation |
+| --- | --- | --- |
+| ![Admin](screenshots/06-admin.png) | ![Maha Nimarjanam](screenshots/07-maha-nimarjanam.png) | ![Digital Invitation](screenshots/08-digital-invitation.png) |
+
+<details>
+<summary>View all images as list</summary>
+
+- **01 — Hero & Countdown** — `screenshots/01-hero.png` `→` `docs/images/01-hero.png`
+- **02 — About the Utsav** — `screenshots/02-about-the-utsav.png`
+- **02 — Schedule (Timeline & Calendar)** — `screenshots/02-schedule.png`
+- **03 — Pooja Timings** — `screenshots/03-pooja.png`
+- **04 — Annadanam** — `screenshots/04-annadanam.png`
+- **05 — Gallery** — `screenshots/05-gallery.png`
+- **06 — Admin Dashboard** — `screenshots/06-admin.png`
+- **07 — Maha Nimarjanam** — `screenshots/07-maha-nimarjanam.png`
+- **08 — Digital Invitation** — `screenshots/08-digital-invitation.png`
+
+</details>
 
 ---
 
@@ -57,8 +74,8 @@ ganesh-chaturthi/
 │   ├── routes/               # auth, settings, pooja, annadanam, nimarjanam, promotions, gallery, committee, schedule, registrations
 │   ├── seed/seed.js
 │   └── package.json          # dev, start, seed
-├── screenshots/              # 6 placeholder images (replace me)
-├── docs/images/              # mirror of screenshots
+├── screenshots/              # 9 screenshots (1920×1080, mirrored in docs/images)
+├── docs/images/              # mirror of screenshots (for docs tooling)
 ├── render.yaml               # Render Blueprint for backend (rootDir: server)
 └── docs: ARCHITECTURE.md, DEVELOPMENT.md, DEPLOYMENT.md, CONFIGURATION.md, OPERATIONS.md, RUNBOOK.md, TROUBLESHOOTING.md, SECURITY.md, API.md, CHANGELOG.md
 ```
@@ -92,7 +109,7 @@ Design tokens: `saffron #FF6B00`, `maroon #6D071A`, `gold #FFB000`, `cream #FFF8
 
 ```bash
 # 1) Clone
-git clone <your-repo-url> ganesh-chaturthi && cd ganesh-chaturthi
+git clone https://github.com/sai4u-dev/ganesh-chaturthi.git && cd ganesh-chaturthi
 
 # 2) Install
 pnpm --prefix frontend install

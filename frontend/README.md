@@ -2,6 +2,11 @@
 
 React 19 + Vite SPA deployed on **Vercel**. Talks to Render backend via `VITE_API_URL`.
 
+> **Repo:** `https://github.com/sai4u-dev/ganesh-chaturthi.git`
+> ```bash
+> git clone https://github.com/sai4u-dev/ganesh-chaturthi.git && cd ganesh-chaturthi/frontend
+> ```
+
 ## Stack
 
 - React 19, React Router 7, Vite 6, Tailwind CSS v4 (`@tailwindcss/vite`), GSAP 3 + ScrollTrigger, Framer Motion, Lenis, lucide-react, axios
@@ -65,7 +70,19 @@ See root `DEPLOYMENT.md` for full split-deploy walkthrough and `CONFIGURATION.md
 
 ## Screenshots
 
-Placeholders in `../screenshots/` and `../docs/images/` — overwrite with 1280×720 captures (hero, schedule, pooja, annadanam, gallery, admin).
+Live captures (1920×1080, 9 images) in [`../screenshots/`](../screenshots/) mirrored in [`../docs/images/`](../docs/images/):
+
+| Hero | About | Schedule |
+| --- | --- | --- |
+| ![Hero](../screenshots/01-hero.png) | ![About](../screenshots/02-about-the-utsav.png) | ![Schedule](../screenshots/02-schedule.png) |
+
+| Pooja | Annadanam | Gallery |
+| --- | --- | --- |
+| ![Pooja](../screenshots/03-pooja.png) | ![Annadanam](../screenshots/04-annadanam.png) | ![Gallery](../screenshots/05-gallery.png) |
+
+| Admin | Nimarjanam | Invitation |
+| --- | --- | --- |
+| ![Admin](../screenshots/06-admin.png) | ![Nimarjanam](../screenshots/07-maha-nimarjanam.png) | ![Invitation](../screenshots/08-digital-invitation.png) |
 
 ## Troubleshooting
 

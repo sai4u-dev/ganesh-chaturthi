@@ -2,6 +2,11 @@
 
 Express 5 + Mongoose 8 REST API deployed on **Render** (MongoDB Atlas). API-only — frontend is on Vercel.
 
+> **Repo:** `https://github.com/sai4u-dev/ganesh-chaturthi.git`
+> ```bash
+> git clone https://github.com/sai4u-dev/ganesh-chaturthi.git && cd ganesh-chaturthi/server
+> ```
+
 ## Stack
 
 - Node 20, Express 5, Mongoose 8, JWT + bcryptjs, cors, helmet, compression, morgan, express-rate-limit, dotenv
