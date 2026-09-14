@@ -10,15 +10,17 @@
 
 > All images are placeholders in [`screenshots/`](screenshots/) — replace them with your real captures. Also mirrored in `docs/images/`.
 
-| Hero & Countdown | Schedule (Timeline) | Pooja Timings |
-|---|---|---|
-| ![Hero](screenshots/01-hero.svg) | ![Schedule](screenshots/02-schedule.svg) | ![Pooja](screenshots/03-pooja.svg) |
+![Hero](screenshots/01-hero.png)
+![Schedule](screenshots/02-schedule.png)
+![Pooja](screenshots/03-pooja.png)
+![Annadanam](screenshots/04-annadanam.png)
+![Gallery](screenshots/05-gallery.png)
+![Admin](screenshots/06-admin.png)
+![About the utsav](screenshots/02-about-the-utsav.png)
+![Maha Nimarjanam](screenshots/07-maha-nimarjanam.png)
+![Digital Invitation](screenshots/08-digital-invitation.png)
 
-| Annadanam | Gallery | Admin Dashboard |
-|---|---|---|
-| ![Annadanam](screenshots/04-annadanam.svg) | ![Gallery](screenshots/05-gallery.svg) | ![Admin](screenshots/06-admin.svg) |
-
-*Tip: take 1280×720 screenshots of each section and overwrite the files above.*
+_Tip: take 1280×720 screenshots of each section and overwrite the files above._
 
 ---
 
@@ -35,7 +37,7 @@
 ## 🗂️ Project Structure
 
 ```
-karthik-kowshik/
+ganesh-chaturthi/
 ├── frontend/                 # React 19 + Vite + Tailwind v4
 │   ├── src/
 │   │   ├── api/client.js     # axios, API_BASE = VITE_API_URL
@@ -65,13 +67,13 @@ karthik-kowshik/
 
 ## 🧰 Tech Stack
 
-| Layer | Tech |
-|---|---|
+| Layer    | Tech                                                                                                                  |
+| -------- | --------------------------------------------------------------------------------------------------------------------- |
 | Frontend | React 19, Vite 6, React Router 7, Tailwind CSS v4 (`@tailwindcss/vite`), GSAP 3 + ScrollTrigger, Framer Motion, Lenis |
-| Backend | Node ≥18, Express 5, Mongoose 8, JWT + bcryptjs, cors, helmet, compression, morgan, express-rate-limit, dotenv |
-| DB | MongoDB (local or Atlas) |
-| Deploy | Vercel (frontend), Render (backend) |
-| Tooling | pnpm, nodemon (server dev), ESLint |
+| Backend  | Node ≥18, Express 5, Mongoose 8, JWT + bcryptjs, cors, helmet, compression, morgan, express-rate-limit, dotenv        |
+| DB       | MongoDB (local or Atlas)                                                                                              |
+| Deploy   | Vercel (frontend), Render (backend)                                                                                   |
+| Tooling  | pnpm, nodemon (server dev), ESLint                                                                                    |
 
 Design tokens: `saffron #FF6B00`, `maroon #6D071A`, `gold #FFB000`, `cream #FFF8E7`; fonts Cinzel / Instrument Sans / Space Grotesk / Cormorant Garamond.
 
@@ -90,7 +92,7 @@ Design tokens: `saffron #FF6B00`, `maroon #6D071A`, `gold #FFB000`, `cream #FFF8
 
 ```bash
 # 1) Clone
-git clone <your-repo-url> karthik-kowshik && cd karthik-kowshik
+git clone <your-repo-url> ganesh-chaturthi && cd ganesh-chaturthi
 
 # 2) Install
 pnpm --prefix frontend install
@@ -116,6 +118,7 @@ pnpm --prefix frontend run dev # http://localhost:5173  (proxies /api → :5000)
 ```
 
 **Verify:**
+
 - `curl http://localhost:5000/api/health` → `{ status: "ok", db: "connected" }`
 - Open `http://localhost:5173` — banner should say “Connected — Data from MongoDB” (or “Demo mode” if DB offline, still renders).
 
@@ -126,6 +129,7 @@ Login: `http://localhost:5173/admin` → `ADMIN_EMAIL` / `ADMIN_PASSWORD` from `
 ## 📜 Scripts
 
 **Frontend (`frontend/package.json`)**
+
 ```bash
 pnpm dev        # vite on :5173
 pnpm build      # vite build → dist/
@@ -134,6 +138,7 @@ pnpm lint       # eslint
 ```
 
 **Backend (`server/package.json`)**
+
 ```bash
 pnpm dev        # nodemon server.js on :5000
 pnpm start      # node server.js (Render uses this)
@@ -147,6 +152,7 @@ Vite proxy: `vite.config.js` uses `loadEnv` → `VITE_PROXY_TARGET` or `http://l
 ## 🔌 Basic Usage
 
 **Public:**
+
 - Scroll through sections via Navbar or anchor links (`#schedule`, `#pooja`, etc.).
 - Gallery → filter by category, lightbox modal.
 - Schedule → toggle Timeline / Calendar, filter by `pran_pratishtha` / `daily_pooja` / `cultural` / `nimajjanam` etc.
@@ -154,6 +160,7 @@ Vite proxy: `vite.config.js` uses `loadEnv` → `VITE_PROXY_TARGET` or `http://l
 - Share invitation → WhatsApp, copy link, QR download.
 
 **Admin:**
+
 - `/admin` login → JWT stored as `ganesh_token` (also `ganesh_user`).
 - Dashboard tabs → CRUD via `frontend/src/api/client.js`. Settings/Nimarjanam are singleton `PUT`, others are list with `POST/PUT/DELETE` + `PATCH /:id/status` where needed.
 - Registrations tab → filter by type/status, update status (`pending→confirmed`), delete.
@@ -202,3 +209,4 @@ Sub-readmes: [frontend/README.md](frontend/README.md), [server/README.md](server
 Questions? Open an issue or contact `info@khairatabadganesh.com`.
 
 Built for Bappa’s 70th year at Khairatabad — Hyderabad’s pride since 1954.
+# ganesh-chaturthi
